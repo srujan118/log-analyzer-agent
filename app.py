@@ -4,7 +4,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_ollama import ChatOllama 
 import os
 
-app = FastAPI(title="Log Analyzer Agent (Local - Llama3)")
+app = FastAPI(title="Log Analyzer Agent (Local - Gemma:2b)")
 
 # ✅ Use Ollama Llama3 (FREE local model)   
 llm = ChatOllama(
@@ -90,7 +90,7 @@ async def analyze_log_file(file: UploadFile = File(...)):
 async def health_check():
     return {
         "status": "healthy",
-        "llm": "llama3 (local via Ollama)",
+        "llm": "gemma:2b (local via Ollama)",
         "cost": "FREE"
     }
 

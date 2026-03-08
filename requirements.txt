@@ -1,0 +1,12 @@
+langchain-ollama==0.2.0
+langchain==0.3.7
+langchain-core==0.3.21
+langchain-community==0.3.7
+langchain-openai==0.2.10
+langchain-text-splitters==0.3.2
+openai==1.57.0
+tiktoken==0.8.0
+fastapi==0.115.0
+uvicorn==0.32.0
+python-multipart==0.0.12
+python-dotenv==1.0.1

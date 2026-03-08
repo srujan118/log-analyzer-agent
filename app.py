@@ -8,9 +8,8 @@ app = FastAPI(title="Log Analyzer Agent (Local - Llama3)")
 
 # ✅ Use Ollama Llama3 (FREE local model)   
 llm = ChatOllama(
-    model="llama3",
-    base_url="http://localhost:11434",
-    temperature=0.2
+    model="gemma:1b",
+    base_url="http://localhost:11434"
 )
 
 # Log analysis prompt
